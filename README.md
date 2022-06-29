@@ -1,4 +1,4 @@
-!(https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png)
+![Js Logo](https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png)
 # Javascript 
 Hello everyone,
 In this Repo, I will compile together all JS terms in as simple way possible.
