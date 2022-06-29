@@ -63,19 +63,19 @@ JavaScript can "display" data in different ways:
       //output 42
       //Go and try it in your browser console.
   
-  # Javascript Input
-   <p>While we are discussing output, you may also wonder about *input*(i.e., receving information from the user).
-   The most common way that happens is for HTML page to show form element (like text box) to a user that he/she can type into, and 
-then use JS to read those values into your program;s variables.
+# Javascript Input
+ <p>While we are discussing output, you may also wonder about *input*(i.e., receving information from the user).
+ The most common way that happens is for HTML page to show form element (like text box) to a user that he/she can type into, and 
+ then use JS to read those values into your program;s variables.
 
-But there's an easier way to get input for simple learning and demonstration purpose such as what you'll be doing throughout this guide. 
-Use the "prompt(..)" function.</P>
+ But there's an easier way to get input for simple learning and demonstration purpose such as what you'll be doing throughout this guide. 
+ Use the "prompt(..)" function.</P>
 
       age = prompt( "please tell me your age:" );
       console.log( age );
       
-in this case "please tell me your age:" --is printed into a popup ans once you submit it after entering the value it should reflect the same in console.log(..).
+ in this case "please tell me your age:" --is printed into a popup ans once you submit it after entering the value it should reflect the same in         console.log(..).
    
-  # conclusion 
+# conclusion 
   So we learned about how we get OUTPUT and INPUT in Javascript.<br>
   Thankyou, if you loved this do share it with your friends. 
