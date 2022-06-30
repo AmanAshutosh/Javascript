@@ -66,5 +66,7 @@ From the example above, you can guess that the total is calculated to be 11.
 * If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated. ( let x = 2 + 3 + "5"; )
 
 
-
+# Conclusion 
+So we learned about Variables in Javascript.
+Thankyou, If you loved this do share it with your friends.
  
