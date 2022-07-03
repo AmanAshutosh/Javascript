@@ -26,7 +26,7 @@ In this example, x, y, and z, are undeclared variables:
     y = 6;
     z = x + y;
     
-From all the examples above, you can guess:
+From all the examples above, we can guess:
 * x stores the value 5
 * y stores the value 6
 * z stores the value 11
@@ -38,8 +38,8 @@ The let and const keywords were added to JavaScript in 2015.<br>
 If you want your code to run in older browser, you must use var.<br>
 
 # When to Use JavaScript const?
-If you want a general rule: always declare variables with const.<br>
-If you think the value of the variable can change, use let.<br>
+If we want a general rule: always declare variables with const.<br>
+If we think the value of the variable can change, use let.<br>
 In this example, price1, price2, and total, are variables:<br>
 
     const cost1 = 5;
@@ -59,11 +59,67 @@ Just like in algebra, variables hold values:
 Just like in algebra, variables are used in expressions:
 
     let z = x + y;
-From the example above, you can guess that the total is calculated to be 11.
+From the example above, we can guess that the total is calculated to be 11.
 # Note
 * Variables are containers for storing values.
 * It's a good programming practice to declare all variables at the beginning of a script.
 * If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated. ( let x = 2 + 3 + "5"; )
+
+# How to Use JavaScript Variables in Functional Scope
+A variable declared inside a function using these keywords is not accessible outside the function. That's the applied functional scope.
+It is true irrespective of whether we use var, let, or const. Inside the function, they are pretty similar in managing a variable's scope.
+Let's take an example again:
+
+    // f1() is a function
+
+    function f1() {
+    let name = "codelessness";
+    const ZIP = 844502;
+    var age = 25;   
+    }
+
+    f1();
+
+    console.log(name); // Uncaught ReferenceError: name is not defined
+    console.log(ZIP);  // Uncaught ReferenceError: ZIP is not defined
+    console.log(age);  // Uncaught ReferenceError: age is not defined
+
+As we see above, none of the variables are accessible outside of the function, not even age which is declared using var. So, the conclusion is,
+
+    The variable declared with var inside a function is not accessible outside of it. The keyword var has function-scope.
+    
+ # How to Use JavaScript Variables in Global Scope
+ Variables declared outside of any functions and blocks are global and are said to have Global Scope. This means we can access them from any part of the current JavaScript program.
+
+we can use *var, let, and const* to declare global variables. But we shouldn't do it too often.
+    
+    let name = "codelessness";
+    const ZIP = 844502;
+    var age = 25;  
+
+    // f1() is a function
+    function f1() {
+      console.log(name); // codelessness
+      console.log(ZIP);  // 844502
+      console.log(age);  // 25
+    }
+
+    f1();
+
+    console.log(name); // codelessness
+    console.log(ZIP);  // 844502
+    console.log(age);  // 25
+
+As we see, the variables are accessible everywhere.
+So, to restrict the scope of a variable using the var, let, and const keywords, here's the order of accessibility in scope starting with the lowest:
+* var: The functional scope level
+* let: The block scope level *(we will discuss this  separately )*
+* const: The block scope level *(we will discuss this  separately )*
+
+![scope img](https://drive.google.com/file/d/1AL5bDdLOTVv_9uB9mgBnjU4xZ-H9x-OQ/view?usp=sharing)
+
+
+
 
 
 # Conclusion 
