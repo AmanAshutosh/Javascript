@@ -26,3 +26,16 @@ Use const when you declare:
 * A new Object
 * A new Function
 * A new RegExp
+
+# Constant Objects and Arrays
+The keyword const is a little misleading.
+It does not define a constant value. It defines a constant reference to a value.
+Because of this we can NOT:
+
+* Reassign a constant value
+* Reassign a constant array
+* Reassign a constant object
+But we can:
+
+Change the elements of constant array
+Change the properties of constant object
