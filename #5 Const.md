@@ -39,3 +39,34 @@ But we can:
 
 Change the elements of constant array
 Change the properties of constant object
+we can change the elements of a constant array:
+
+    // we can create a constant array:
+    const cars = ["Saab", "Volvo", "BMW"];
+
+    // we can change an element:
+    cars[0] = "Toyota";
+
+    // we can add an element:
+    cars.push("Audi");
+But we can NOT reassign the array:
+
+    const cars = ["Saab", "Volvo", "BMW"];
+    cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+    
+# Constant Objects
+we can change the properties of a constant object:
+
+    // we can create a const object:
+    const car = {type:"Maruti", model:"500", color:"white"};
+
+    // we can change a property:
+    car.color = "yellow";
+
+    // we can add a property:
+    car.owner = "golu";
+    
+But we can NOT reassign the object:
+
+    const car = {type:"Maruti", model:"500", color:"white"};
+    car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
