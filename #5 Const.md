@@ -69,4 +69,4 @@ we can change the properties of a constant object:
 But we can NOT reassign the object:
 
     const car = {type:"Maruti", model:"500", color:"white"};
-    car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR
+    car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR.
