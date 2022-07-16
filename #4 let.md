@@ -56,7 +56,7 @@ For Example:
     }
 
     console.log(f_name); // Uncaught ReferenceError: f_name is not defined
-    console.log(ZIP);  // Uncaught ReferenceError: ZIP is not defined
+    console.log(ZIP);  // Uncaught ReferenceError: ZIP is not defined.
     console.log(age);  // 25
   
 As we can see, the value of the age variable may get overridden unknowingly and eventually introduce a bug. So, the moral of the story is
