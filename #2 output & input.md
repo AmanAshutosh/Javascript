@@ -78,4 +78,4 @@ JavaScript can "display" data in different ways:
    
 # conclusion 
   So we learned about how we get OUTPUT and INPUT in Javascript.<br>
-  Thankyou, if you loved this do share it with your friends. 
+  Thankyou.
